@@ -1,0 +1,77 @@
+.navigation-bar {
+    overflow: hidden;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+}
+
+.navigation-bar,
+.left-nav,
+.mid-nav,
+.rigth-nav {
+    min-height: 9.5vh;
+    display: flex;
+    align-items: center;
+    background-color: #eeede7;
+}
+
+.left-nav {
+    cursor: pointer;
+    min-width: 15vw;
+    color: white;
+    padding: 0 2.5vw;
+    font-size: 100%;
+    justify-content: center;
+    background-color: #4c5270;
+}
+
+.left-nav:hover {
+    background-color: #44485c;
+}
+.mid-nav {
+    min-width: 60vw;
+    color: black;
+    font-weight: 500;
+    font-size: 100%;
+    padding: 0 2vw;
+}
+.mid-nav div {
+    margin: 0 0.4vw;
+    padding: 2vh 1vw;
+    border-radius: 1vh;
+}
+.mid-nav div:hover {
+    color: white;
+    cursor: pointer;
+    background-color: #04d4f0;
+}
+
+.rigth-nav {
+    min-width: 10vw;
+    padding: 0 2.5vw;
+    justify-content: center;
+}
+.rigth-nav button {
+    border: 0;
+    font-weight: 900;
+    font-size: 100%;
+    width: 100%;
+    margin: 1vh 0.4vw;
+    padding: 2vh 2vw;
+    color: white;
+    border-radius: 1vh;
+    background-color: #04d4f0;
+}
+.rigth-nav-prifile button {
+    background-color: #4c5270;
+    border: 0;
+    padding: 1vh 0.6vw;
+    border-radius: 25vw;
+}
+.rigth-nav button:hover {
+    cursor: pointer;
+    background-color: #4c5270;
+}
+.MuiSvgIcon-root {
+    color: greenyellow;
+}

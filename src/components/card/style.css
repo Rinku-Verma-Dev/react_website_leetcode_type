@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: #e7e9ef;
+  min-width: 80vw;
+  padding: 3vh 3vw;
+  border-bottom: 1px solid #c2c8d9;
+}
+
+.explore_problemContainerTxt {
+    color: black;
+    font-size: larger;
+}
+.card button {
+  background-color: green;
+  border: 0;
+  border-radius: 0.5vh;
+  padding: 1vh;
+  margin-left: auto;
+}
+.card a {
+  font-size: larger;
+  text-decoration: none;
+  color: white;
+  display: block;
+}

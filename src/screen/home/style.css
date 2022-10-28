@@ -1,0 +1,9 @@
+.card-contairen-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_content_card {
+    margin-top: 15vh;
+}

@@ -1,0 +1,21 @@
+.login_sigup-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 85vh;
+}
+.login-option {
+    width: 30vw;
+}
+.optn-btn {
+    font-weight: bolder;
+    border: 0;
+    width: 50%;
+    padding: 1vh;
+}
+.selected_btn {
+    background-color: #4c5270;
+    color: white;
+}

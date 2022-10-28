@@ -1,0 +1,50 @@
+.signup-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #b5b8c9;
+    width: 30vw;
+    padding: 10vh 0vw;
+}
+.input {
+    width: 75%;
+    padding: 1vh;
+    margin: auto;
+}
+.in-lName,
+.in-fName,
+.in-pass,
+.in-email {
+    padding: 1vh;
+    margin-bottom: 1vw;
+}
+.submit-buttion {
+    margin: auto;
+}
+.sub-btn {
+    cursor: pointer;
+    font-weight: bolder;
+    border: 0;
+    background-color: #4c5270;
+    color: white;
+    padding: 1vh 3vw;
+}
+.sub-btn:hover {
+    background-color: #3f455f;
+}
+.errorMessage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 5vh;
+    padding: 2vh 0.8vw;
+    width: 80%;
+    background-color: rgb(236, 181, 181);
+    border: 0.3vh solid red;
+    border-radius: 3vh;
+}
+.required,
+.errorMessage {
+    color: red;
+}
