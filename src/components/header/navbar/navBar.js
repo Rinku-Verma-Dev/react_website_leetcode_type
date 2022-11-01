@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { menu } from "../navItemMenu";
@@ -12,6 +12,13 @@ const Navbar = ({ title = "PROcode", auth }) => {
   const handleMouseEnter = () => {
     setActive(!active);
   };
+  const navigation = useNavigate();
+  const handleLogout = () => {
+    console.log(">>>", navigation);
+    localStorage.setItem("token", "");
+    navigation("/login")
+  };
+
   return (
     <>
       <nav className="navbar">
@@ -52,6 +59,13 @@ const Navbar = ({ title = "PROcode", auth }) => {
               {active && (
                 <ul>
                   {menuItem.map((itm) => {
+                    if (itm.title === "Log Out") {
+                      return (
+                        <li key={itm.id} onClick={handleLogout}>
+                          <div>{itm.title}</div>
+                        </li>
+                      );
+                    }
                     return (
                       <li key={itm.id}>
                         <Link to={itm.url}>{itm.title}</Link>
