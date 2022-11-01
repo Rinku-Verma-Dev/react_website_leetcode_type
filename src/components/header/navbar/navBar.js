@@ -14,9 +14,8 @@ const Navbar = ({ title = "PROcode", auth }) => {
   };
   const navigation = useNavigate();
   const handleLogout = () => {
-    console.log(">>>", navigation);
     localStorage.setItem("token", "");
-    navigation("/login")
+    navigation("/login");
   };
 
   return (
