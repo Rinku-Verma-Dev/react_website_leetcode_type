@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Navbar from "../../components/header/navbar/navBar";
 import Login from "../../components/login/login";
 import SignUP from "../../components/signup/signup";
+import useAuth from "../../routers/useAuthHook/useAuth";
 
 import "./style.css";
 
@@ -14,10 +15,10 @@ const LoginScr = () => {
   const clicklogin = () => {
     setLogState(false);
   };
-
+  const auth = useAuth();
   return (
     <>
-      <Navbar />
+      <Navbar auth={auth} />
       <div className="login_sigup-con">
         <div className="login-option">
           <button

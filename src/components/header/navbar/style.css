@@ -118,3 +118,19 @@
 .nav_profile_btn button:focus + ul {
   display: block;
 }
+
+/* >>>>>>>>>>>> sign in button*/
+.nav_signin_btn a{
+  text-decoration: none;
+  color: #0C2D48;
+  font-weight: bold;
+}
+.nav_signin_btn button {
+  border: 0;
+  border-radius: 1vh;
+  padding: 1vh;
+  background-color: #ddd;
+}
+.nav_signin_btn button:hover {
+  background-color: white;
+}

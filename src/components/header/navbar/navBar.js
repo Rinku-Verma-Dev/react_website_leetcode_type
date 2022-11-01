@@ -16,10 +16,10 @@ const Navbar = ({ title = "PROcode", auth }) => {
     <>
       <nav className="navbar">
         <div className="navbar_logo">
-          <Link to="./">
+          <Link to="/">
             <IntegrationInstructionsIcon sx={{ fontSize: 40 }} />
           </Link>
-          <Link to="./">{title}</Link>
+          <Link to="/">{title}</Link>
         </div>
 
         <div className="nav_middle_menu">
@@ -54,7 +54,7 @@ const Navbar = ({ title = "PROcode", auth }) => {
                   {menuItem.map((itm) => {
                     return (
                       <li key={itm.id}>
-                        <Link to="/profile">{itm.title}</Link>
+                        <Link to={itm.url}>{itm.title}</Link>
                       </li>
                     );
                   })}
@@ -62,7 +62,7 @@ const Navbar = ({ title = "PROcode", auth }) => {
               )}
             </div>
           ) : (
-            <div>
+            <div className="nav_signin_btn">
               <button>
                 <Link to="/login">SIGN UP</Link>
               </button>
