@@ -2,11 +2,10 @@ import React from "react";
 
 import Navbar from "../header/navbar/navBar";
 
-
 const Profile = () => {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <h1>Profile</h1>
     </>
   );

@@ -14,9 +14,9 @@ const Routing = () => {
       <Route
         path="/"
         element={
-          // <PrivateRoute key={1}>
-          <Home />
-          // </PrivateRoute>
+          <PrivateRoute key={1}>
+            <Home />
+          </PrivateRoute>
         }
       />
 
