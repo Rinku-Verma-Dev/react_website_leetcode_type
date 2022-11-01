@@ -1,27 +1,15 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router";
 
-import "./style.css" 
+import "./style.css";
 
 import Card from "../../components/card/card";
-import Header from "../../components/header";
 import useAuth from "../../routers/useAuthHook/useAuth";
+import Navbar from "../../components/header/navbar/navBar";
 
 const Home = () => {
   const [data, setData] = useState([]);
   const auth = useAuth();
-  const navigate = useNavigate();
-
-  const handleLoginClick = () => {
-    navigate("/login");
-  };
-  const handleHomeClick = () => {
-    navigate("/");
-  };
-  const handleProfileClick = () => {
-    navigate("/profile");
-  };
 
   useEffect(() => {
     axios
@@ -33,17 +21,12 @@ const Home = () => {
   }, []);
   return (
     <React.Fragment key={1}>
-      <Header
-        title="PROcode"
-        auth={auth}
-        onclickProfile={handleProfileClick}
-        onClickLogin={handleLoginClick}
-        onclickHome={handleHomeClick}
-      />
+      <Navbar title="PROcode" auth={auth} />
       <div className="main_content_card">
+        <div></div>
         {data.map((item, i) => {
           return (
-            <div className="card-contairen-home">
+            <div className="card-contairen-home" key={i}>
               <Card data={item} />
             </div>
           );

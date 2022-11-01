@@ -1,6 +1,4 @@
-export const menuItem = {
-  profile: [
-    { title: "My Profile", url: "/profile" },
-    { title: "Log Out", url: "" },
-  ],
-};
+export const menuItem = [
+  { id: 1, title: "My Profile", url: "./profile" },
+  { id: 2, title: "Log Out", url: " " },
+];

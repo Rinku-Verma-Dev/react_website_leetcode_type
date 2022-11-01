@@ -1,23 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router";
 
-import Header from "../header";
+import Navbar from "../header/navbar/navBar";
+
 
 const Profile = () => {
-  const navigate = useNavigate(); 
-  const handleHomeClick = () => {
-    navigate("/");
-  };
-  const handleProfileClick = () => {
-    navigate("/profile");
-  };
   return (
     <>
-      <Header 
-
-handleProfileClick={handleProfileClick}
-handleHomeClick={handleHomeClick}
-      />
+      <Navbar/>
       <h1>Profile</h1>
     </>
   );

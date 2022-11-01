@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router";
 
-import Header from "../../components/header";
+import Navbar from "../../components/header/navbar/navBar";
 import Login from "../../components/login/login";
 import SignUP from "../../components/signup/signup";
 
@@ -9,29 +8,16 @@ import "./style.css";
 
 const LoginScr = () => {
   const [logState, setLogState] = useState(false);
-  const navigate = useNavigate();
   const clickSignup = () => {
     setLogState(true);
   };
   const clicklogin = () => {
     setLogState(false);
   };
-  const handleLoginClick = () => {
-    navigate("/login");
-  };
-  const handleHomeClick = () => {
-    navigate("/");
-  };
-  const handleProfileClick = () => {
-    navigate("/profile");
-  };
+
   return (
     <>
-      <Header
-        handleProfileClick={handleProfileClick}
-        handleLoginClick={handleLoginClick}
-        handleHomeClick={handleHomeClick}
-      />
+      <Navbar />
       <div className="login_sigup-con">
         <div className="login-option">
           <button

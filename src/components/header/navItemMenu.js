@@ -8,13 +8,7 @@ export  const menu = [
     {
         id: 2,
         title: "Category",
-        path: "./catepory",
-        cName: "nav_item"
-    },
-    {
-        id: 3,
-        title: "Category",
-        path: "./catepory",
+        path: "./category",
         cName: "nav_item"
     }
 ]
