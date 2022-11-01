@@ -1,9 +1,12 @@
 .navbar {
-  background-color: #05445e;
+  top: 0;
   display: flex;
+  position: fixed;
+  min-width: 100vw;
+  /* overflow: hidden; */
   align-items: center;
   padding: 0.5vh 1vw 0 1vw;
-  /* margin-top: 20vh; */
+  background-color: #05445e;
 }
 /*>>>>>>>>>>>>>>>>>>>> nav bar logo*/
 .navbar_logo {
@@ -90,6 +93,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1vh;
 }
 
 .nav_profile_btn li:hover {
@@ -99,9 +103,10 @@
 .nav_profile_btn ul {
   position: absolute;
   background-color: #274472;
-  margin-top: 1vh;
+  margin-top: 0.1vh;
   padding: 1vh;
-  width: 10vw;
+  width: 6vw;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -120,9 +125,9 @@
 }
 
 /* >>>>>>>>>>>> sign in button*/
-.nav_signin_btn a{
+.nav_signin_btn a {
   text-decoration: none;
-  color: #0C2D48;
+  color: #0c2d48;
   font-weight: bold;
 }
 .nav_signin_btn button {
